@@ -1,0 +1,234 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+/* 
+공통*/
+.button_common {
+  border-radius: 99px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  min-width: 335px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 10px 22px 0px #95adfe4d;
+}
+
+/*
+ ------------- */
+.main {
+  background-color: #ffebeb;
+  width: 100%;
+  height: 100vh;
+}
+.main_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.main_logo {
+  width: 160px;
+  display: block;
+}
+.main_start {
+  width: 140px;
+  margin-top: 16px;
+  color: white;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  padding: 10px 40px;
+  border-radius: 99px;
+  font-size: 14px;
+}
+
+/* 로그인 */
+.login_page {
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+  text-align: center;
+}
+.login_page_title {
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+.login_page_title img {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.login_page_title p {
+  /* margin: 0 auto; */
+  /* width: 200px; */
+  margin-bottom: -12px;
+  font-size: 14px;
+  color: #ada4a5;
+}
+.login_page_title h1 {
+  font-family: 'Dongle';
+  font-weight: 700;
+  font-size: 55px;
+  color: #563434;
+}
+.login_page_title span {
+  color: #ff6060;
+}
+.email,
+.pwd {
+  width: 335px;
+  margin: 0 auto;
+  position: relative;
+}
+.sign_form {
+  padding: 16px 16px 16px 43px;
+  min-width: 335px;
+  height: 48px;
+  background-color: #f7f8f8;
+  margin-bottom: 20px;
+  border: 1px solid #f7f8f8;
+  border-radius: 14px;
+  font-size: 12px;
+  outline: none;
+}
+.email img {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+.pwd img {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+. .errmsg {
+  width: 335px;
+  margin: 0 auto;
+  background-color: #ddd;
+  position: relative;
+}
+.errmsg p {
+  position: absolute;
+  width: 335px;
+  color: red;
+  top: -18px;
+}
+.go_register {
+  margin-top: 20px;
+  color: #333333;
+  font-size: 13px;
+}
+.go_register span {
+  color: #ff6060;
+  font-weight: 600;
+  font-size: 14px;
+}
+.signin_sns {
+  color: #333333;
+  font-size: 12px;
+  width: 335px;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+.signin_sns p {
+  margin-bottom: 20px;
+  background: url(../assets/line.png) no-repeat;
+  background-position: center center;
+}
+
+/* 회원가입페이지 */
+.register_page {
+  width: 100%;
+  height: 100vh;
+  padding-top: 190px;
+  text-align: center;
+  background: url(../assets/Vector.png) repeat-x center top;
+}
+.register_page_title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.register_sns {
+  color: #333333;
+  font-size: 12px;
+  width: 335px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.register_sns p {
+  margin-bottom: 20px;
+  background: url(../assets/line.png) no-repeat;
+  background-position: center center;
+}
+.display_name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 190px;
+  text-align: center;
+  background-color: #fff;
+}
+.display_box {
+  position: relative;
+  width: 335px;
+  margin: 0 auto;
+}
+.display_box img {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+
+/* header */
+.list_header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.list_header:nth-child(1) {
+  flex: 1 1 33%;
+}
+.list_header:nth-child(2) {
+  flex: 1 1 33%;
+}
+.list_header:nth-child(3) {
+  flex: 1 1 33%;
+}
+.list_header_center {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* margin-left: 36px; */
+}
+.list_header_center p {
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+.list_header_center img {
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+}
+.list_icon_r {
+  display: flex;
+}
+.alert_icon {
+  margin-left: 16px;
+}
